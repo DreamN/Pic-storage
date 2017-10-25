@@ -20,7 +20,7 @@ This project is under the MIT License.
 run the code below - make sure permission is set ( chmod +x DBsetup.sh )
 
 ```
-    $ ./DBsetup.sh
+  $ ./DBsetup.sh
 ```
 
 - Install the required library
