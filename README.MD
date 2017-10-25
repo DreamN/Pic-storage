@@ -17,12 +17,10 @@ This project is under the MIT License.
 ```
 - Create the database table (for the first time)
 
-run the code below
+run the code below - make sure permission is set ( chmod +x DBsetup.sh )
 
 ```
-    $python
-    >>> import app
-    >>> app.createDBTable()
+    $ ./DBsetup.sh
 ```
 
 - Install the required library
