@@ -28,3 +28,23 @@ This project is under the MIT License.
 ```
   $ python app.py
 ```
+
+## To deploy application
+
+- Configure and enable new virtual host - /etc/<your-server-directory>/<configuration-file>>
+
+- Be sure to change the ServerName to your domain or cloud server's IP address.
+
+- Create .wsgi file 
+
+```python
+    #!/usr/bin/python
+    import sys
+    import logging
+    logging.basicConfig(stream=sys.stderr)
+    sys.path.insert(0,"/var/www/FlaskApp/")
+
+from FlaskApp import app as application
+application.secret_key = 'Add your secret key'
+```
+
